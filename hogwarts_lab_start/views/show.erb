@@ -1,0 +1,10 @@
+<p>First Name: <%= @student.first_name.capitalize %></p>
+<p>Last Name: <%= @student.last_name.capitalize%></p>
+<p>Age: <%= @student.age %></p>
+<p>House: <%= @student.house_id %></p>
+
+<p><a href="/hogwarts/students/<%= @student.id %>/edit">Edit Student Details</a></p>
+
+<form method="post" action="/hogwarts/students/<%= @student.id %>/delete">
+  <input type="submit" value="Delete Student"/>
+</form>
