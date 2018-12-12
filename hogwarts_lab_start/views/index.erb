@@ -1,5 +1,7 @@
 <% @students.each do |student| %>
   <p>Name: <%= student.format_name %></p>
-  <p><a href="/hogwarts/students/<%= student.id %>">Student details</a></p>
-  <hr>
-<% end %>
+
+  <p>House: <%=student.house.name.capitalize %> </p>
+    <p><a href="/hogwarts/students/<%= student.id %>">Student details</a></p>
+    <hr>
+    <% end %>

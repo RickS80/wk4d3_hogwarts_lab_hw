@@ -7,6 +7,7 @@ also_reload('./models/*')
 # index
 get '/hogwarts/students' do
   @students = Student.all()
+  @houses = House.all()
   erb(:index)
 end
 # new
